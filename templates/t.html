@@ -83,6 +83,8 @@
 </head>
 <body>
     <h1>భావాత్మక విశ్లేషణ</h1>
+    <button onclick="english()">Toggle to English</button>
+     <button onclick="hindi()">Toggle to Hindi</button>
     <form action="/analyze" method="post" enctype="multipart/form-data">
        <label for="file">ఫైలు అప్‌లోడ్ చేయండి:</label>
        <input type="file" name="file" id="file">
@@ -114,6 +116,12 @@
     </div>
     {% endif %}
 <script>
+      function english(){
+        window.location.href='r.html'
+    }
+    function hindi(){
+        window.location.href='h.html'
+    }
 </script>
 </body>
 </html>
